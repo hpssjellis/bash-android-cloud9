@@ -166,19 +166,27 @@ echo "--------------------------------------------------------------------------
 echo "------------------------------------------------------------------------------"
 Echo "Now the fun part, Lets make the Hello World App"
 
-echo "Enter a simple lowercase name for your folder and app (no spaces)"
-MY-APP-FOLDER=hello-world
+#!/bin/bash  
 
+#  only need to run this script with the command (do not type the #)
+#  bash a06-rocksetta-setup-android.sh
+# best in cloud 9 to just right click this file and select run
+
+
+#change hello-world to the name of your app and folder
+
+echo "Enter a name in lowercase, no spaces, no dash, for your app and folder example: my_hello_world"
+read wow4
 
 
 
 
 android create project \
 --target android-20 \
---name my$MY-APP-FOLDER \
---path $MY-APP-FOLDER \
---activity myActivity$MY-APP-FOLDER \
---package com.example.$MY-APP-FOLDER
+--name $wow4 \
+--path $wow4 \
+--activity $wow4 \
+--package com.example.$wow4
 
 
 
@@ -188,16 +196,20 @@ android create project \
 
 #ant
 
-android update project --name my$MY-APP-FOLDER --target android-20 --path $MY-APP-FOLDER
+android update project --name $wow4 --target android-20 --path $wow4
 
-cd $MY-APP-FOLDER
+cd $wow4
 
 ant clean
 
 ant debug
 
+cd bin
+
+
+
 
 ls
 
 
-echo "Look for you new android my$MY-APP-FOLDER debug.apk"
+echo "Look for you new android $wow4/bin $wow4-debug.apk"
