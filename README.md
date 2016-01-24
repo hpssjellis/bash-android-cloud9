@@ -1,8 +1,15 @@
 # bash-install-android-sdk-auto-app-create-on-cloud9
-using bash to automate the Android-SDK install specific to cloud9 and then create a debug Hello-Worled App and Access webpage
+using bash to automate the Android-SDK install specific to cloud9 and then create a debug Hello-Worled App and Access webpage for Android 4.4.0 Kitkat, can also do Android versions 5.1 and 6.0
 
 Jan 24, 2016
 
+Fast steps:
+
+run setup.sh
+run index.html
+preview webpage- download app to android 4.4 phone Kitkat
+
+What is happening(longer version):
 
 Use cloud 9 https://c9.io to istall this repository then run setup.sh
 
@@ -16,6 +23,7 @@ The bash file should:
 3. install gradle
 4. create and App
 5. ant or gradle build the app
+6. auto update index.html with a link to the build .apk
 
 
 Then load a webpage that gives your phone access to the app for testing (emulators suck!)
@@ -34,4 +42,4 @@ Then load a webpage that gives your phone access to the app for testing (emulato
 
 
 
-Note: unless you set a version number you may have to fully delete the App to be able to install it again.
+Note: unless you set a version number you may have to fully delete the App to be able to install the next version.
