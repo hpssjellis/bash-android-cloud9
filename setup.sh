@@ -175,6 +175,7 @@ Echo "Now the fun part, Lets make the Hello World App"
 
 #change hello-world to the name of your app and folder
 
+
 echo "Enter a name in lowercase, no spaces, no dash, for your app and folder example: my_hello_world"
 read wow4
 
@@ -207,9 +208,12 @@ ant debug
 cd bin
 
 
+printf "\n\n<a href='$wow4/bin/$wow4-debug.apk'>$wow4/bin/$wow4-debug.apk</a><br>"  >> /home/ubuntu/workspace/index.html
+
 
 
 ls
 
 
 echo "Look for you new android $wow4/bin $wow4-debug.apk"
+echo "rightclick run index.html, then preview-preview running application to view webpage with .apk"
