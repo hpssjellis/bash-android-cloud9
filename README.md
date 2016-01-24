@@ -5,9 +5,25 @@ Jan 24, 2016
 
 Fast steps:
 
-run setup.sh
-run index.html
+right-click run setup.sh (watch for yes/no, type y then click enter) (also watch for the name of your app folder)
+
+right-click run index.html
+
 preview webpage- download app to android 4.4 phone Kitkat
+
+
+
+
+
+
+
+
+.
+.
+.
+.
+.
+.
 
 What is happening(longer version):
 
