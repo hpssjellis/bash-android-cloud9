@@ -7,18 +7,18 @@
 
 #change hello-world to the name of your app and folder
 
-MY-APP-FOLDER=hello-world
-
+echo "Enter a name in lowercase, no spaces, no dash, for your app and folder example: my_hello_world"
+read wow4
 
 
 
 
 android create project \
 --target android-20 \
---name my$MY-APP-FOLDER \
---path $MY-APP-FOLDER \
---activity myActivity$MY-APP-FOLDER \
---package com.example.$MY-APP-FOLDER
+--name $wow4 \
+--path $wow4 \
+--activity $wow4 \
+--package com.example.$wow4
 
 
 
@@ -28,16 +28,20 @@ android create project \
 
 #ant
 
-android update project --name my$MY-APP-FOLDER --target android-20 --path $MY-APP-FOLDER
+android update project --name $wow4 --target android-20 --path $wow4
 
-cd $MY-APP-FOLDER
+cd $wow4
 
 ant clean
 
 ant debug
 
+cd bin
+
+
+
 
 ls
 
 
-echo "Look for you new android my$MY-APP-FOLDER debug.apk"
+echo "Look for you new android $wow4/bin $wow4-debug.apk"
