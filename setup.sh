@@ -167,7 +167,7 @@ echo "--------------------------------------------------------------------------
 Echo "Now the fun part, Lets make the Hello World App"
 
 echo "Enter a simple lowercase name for your folder and app (no spaces)"
-read MY-APP-FOLDER
+MY-APP-FOLDER=hello-world
 
 
 
