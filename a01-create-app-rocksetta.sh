@@ -39,9 +39,12 @@ ant debug
 cd bin
 
 
+printf "\n\n<a href='$wow4/bin/$wow4-debug.apk'>$wow4/bin/$wow4-debug.apk</a><br>"  >> /home/ubuntu/workspace/index.html
+
 
 
 ls
 
 
 echo "Look for you new android $wow4/bin $wow4-debug.apk"
+echo "rightclick run index.html, then preview-preview running application to view webpage with .apk"
