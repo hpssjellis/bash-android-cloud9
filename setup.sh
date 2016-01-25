@@ -176,8 +176,8 @@ Echo "Now the fun part, Lets make the Hello World App"
 #change hello-world to the name of your app and folder
 
 
-echo "Enter a name in lowercase, no spaces, no dash, for your app and folder example: my_hello_world"
-read wow4
+echo "Enter a folder name, no spaces, no dashes, underscore allowed, for your app and folder example: helloWorld"
+wow4=helloWrold
 
 
 
