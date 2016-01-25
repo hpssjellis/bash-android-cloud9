@@ -10,7 +10,17 @@
 echo "Enter a folder name, no spaces, no dashes, underscore allowed, for your app and folder example: helloWorld"
 read wow4
 
+echo "Note: --target android-20 is for Android 4.4.0 running Kitkat"
+echo "android 5.1.1 and 6.0 have been installed but you must change the below target to "
+echo "--target android-22     for Android 5.1.1   Lollipop"
+echo "--target android-23     for Android 6.0   Marshmallow"
+echo "Note the target command occurs twice, Save the file with ctrl-S"
+echo "if you need a specific Android version then copy the following line into a terminal with the correct number"
 
+echo "android update sdk --filter android-22 --no-ui --force "
+
+echo "To find the names or numbers you can type"
+echo "android list sdk"
 
 
 android create project \
