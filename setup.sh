@@ -177,7 +177,7 @@ Echo "Now the fun part, Lets make the Hello World App"
 
 
 echo "Enter a folder name, no spaces, no dashes, underscore allowed, for your app and folder example: helloWorld"
-wow4=helloWrold
+wow4=helloWorld
 
 
 
