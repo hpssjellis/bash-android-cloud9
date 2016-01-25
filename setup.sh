@@ -212,7 +212,7 @@ printf "\n\n<a href='$wow4/bin/$wow4-debug.apk'>$wow4/bin/$wow4-debug.apk</a><br
 
 
 
-ls
+ls -l
 
 
 echo "Look for you new android $wow4/bin $wow4-debug.apk"
