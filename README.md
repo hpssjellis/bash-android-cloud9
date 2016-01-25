@@ -5,11 +5,13 @@ Jan 24, 2016
 
 Fast steps:
 
-right-click run setup.sh (watch for yes/no, type y then click enter) (also watch for the name of your app folder)
+1. right-click run setup.sh (watch for yes/no, type y then click enter, happens several times during the install) 
 
-right-click run index.html
+1. right-click index.html then select "run"
 
-preview webpage- download app to android 4.4 phone Kitkat
+1. from the menu "preview" --> Preview Running Application" 
+
+1. Look at the URL and load it on your Phone (set for KitKat Android 4.4)
 
 
 
@@ -25,7 +27,7 @@ preview webpage- download app to android 4.4 phone Kitkat
 .
 .
 
-What is happening(longer version):
+What is really happening(longer version):
 
 Use cloud 9 https://c9.io to istall this repository then run setup.sh
 
