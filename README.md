@@ -16,7 +16,13 @@ Fast steps:
 
 
 
+Note. To make your own Android App. 
 
+Bash a01-create-app-rocksetta.sh 
+
+or right click a01-create-app-rocksetta.sh then type a folder name.
+
+Enjoy!
 
 
 
@@ -59,7 +65,7 @@ Then load a webpage that gives your phone access to the app for testing (emulato
 
 1. set your phone security to unknown sources
 
-1.install app
+1. install app
 
 
 
