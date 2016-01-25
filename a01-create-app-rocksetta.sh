@@ -7,7 +7,7 @@
 
 #change hello-world to the name of your app and folder
 
-echo "Enter a name in lowercase, no spaces, no dash, for your app and folder example: my_hello_world"
+echo "Enter a folder name, no spaces, no dashes, underscore allowed, for your app and folder example: helloWorld"
 read wow4
 
 
@@ -43,7 +43,7 @@ printf "\n\n<a href='$wow4/bin/$wow4-debug.apk'>$wow4/bin/$wow4-debug.apk</a><br
 
 
 
-ls
+ls -l
 
 
 echo "Look for you new android $wow4/bin $wow4-debug.apk"
