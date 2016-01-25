@@ -5,7 +5,7 @@ Jan 24, 2016
 
 Fast steps:
 
-1. right-click run setup.sh (watch for yes/no, type y then click enter, happens several times during the install) 
+1. right-click setup.sh then select run (watch for yes/no, type y then click enter, happens several times during the install) 
 
 1. right-click index.html then select "run"
 
