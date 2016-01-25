@@ -21,10 +21,15 @@ Fast steps:
 
 
 .
+
 .
+
 .
+
 .
+
 .
+
 .
 
 What is really happening(longer version):
