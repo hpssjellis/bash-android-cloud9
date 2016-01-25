@@ -34,7 +34,7 @@ Fast steps:
 
 What is really happening(longer version):
 
-Use cloud 9 https://c9.io to istall this repository then run setup.sh
+Use cloud 9 https://c9.io to install this repository then run setup.sh
 
 bash setup.sh
 
