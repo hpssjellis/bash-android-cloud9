@@ -7,12 +7,23 @@
 
 
 
-echo "Type the number of the target your Android app is for"
-echo "for --target android-20    Android 4.4W.2 KitKat, type 20"
-echo "for --target android-22  Android 5.1.1  Lollipop, type 22"
-echo "for --target android-23   Android 6.0    Marshmallow, type 23"
-read myNum
+#echo "Type the number of the target your Android app is for"
+#echo "for --target android-20    Android 4.4W.2 KitKat, type 20"
+#echo "for --target android-22  Android 5.1.1  Lollipop, type 22"
+#echo "for --target android-23   Android 6.0    Marshmallow, type 23"
 
+echo "Finding code numbers for the Android SDK platform you wish to install"
+echo "PS. You could type the entire name example android-23"
+echo "Note: This setup comes installed with android-20  Android-22 Android-23"
+
+android list sdk
+
+echo "------------------------------------------------------------------------"
+echo ""
+echo "Type the left hand side number of the SDK to install"
+
+read myNum
+android update sdk --filter $myNum --no-ui --force 
 
 
 # the commands to install the platforms
