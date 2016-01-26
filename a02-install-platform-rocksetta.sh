@@ -13,8 +13,7 @@
 #echo "for --target android-23   Android 6.0    Marshmallow, type 23"
 
 echo "Finding code numbers for the Android SDK platform you wish to install"
-echo "PS. You could type the entire name example android-23"
-echo "Note: This setup comes installed with android-20  Android-22 Android-23"
+echo ""
 
 android list sdk
 
