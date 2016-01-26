@@ -1,7 +1,7 @@
 #!/bin/bash  
 
 #  only need to run this script with the command (do not type the #)
-#  bash a06-rocksetta-setup-android.sh
+#  bash a01-create-app-rocksetta.sh
 # best in cloud 9 to just right click this file and select run
 
 
@@ -10,21 +10,26 @@
 echo "Enter a folder name, no spaces, no dashes, underscore allowed, for your app and folder example: helloWorld"
 read wow4
 
-echo "Note: --target android-20 is for Android 4.4.0 running Kitkat"
-echo "android 5.1.1 and 6.0 have been installed but you must change the below target to "
-echo "--target android-22     for Android 5.1.1   Lollipop"
-echo "--target android-23     for Android 6.0   Marshmallow"
-echo "Note the target command occurs twice, Save the file with ctrl-S"
-echo "if you need a specific Android version then copy the following line into a terminal with the correct number"
+echo "Type the number of the target your Android app is for"
+echo "for --target android-20    Android 4.4W.2 KitKat, type 20"
+echo "for --target android-22  Android 5.1.1  Lollipop, type 22"
+echo "for --target android-23   Android 6.0    Marshmallow, type 23"
+read myNum
 
-echo "android update sdk --filter android-22 --no-ui --force "
 
-echo "To find the names or numbers you can type"
-echo "android list sdk"
+
+# the commands to install the platforms
+
+#android update sdk --filter android-20 --no-ui --force   #Android 4.4W.2 KitKat
+#android update sdk --filter android-22 --no-ui --force   #Android 5.1.1  Lollipop
+#android update sdk --filter android-23 --no-ui --force   #Android 6.0    Marshmallow
+
+#Good site to check
+#http://socialcompare.com/en/comparison/android-versions-comparison
 
 
 android create project \
---target android-20 \
+--target android-$myNum \
 --name $wow4 \
 --path $wow4 \
 --activity $wow4 \
@@ -38,7 +43,7 @@ android create project \
 
 #ant
 
-android update project --name $wow4 --target android-20 --path $wow4
+android update project --name $wow4 --target android-$myNum --path $wow4
 
 cd $wow4
 
