@@ -210,10 +210,10 @@ ant clean
 
 ant debug
 
-cd bin
+cd platforms/android/build/outputs/apk
+#/home/ubuntu/workspace/helloWorld/platforms/android/build/outputs/apk
 
-
-printf "\n\n<a href='$wow4/bin/$wow4-debug.apk'>$wow4/bin/$wow4-debug.apk</a><br>"  >> /home/ubuntu/workspace/index.html
+printf "\n\n<a href='$wow4/platforms/android/build/outputs/apk/$wow4-debug.apk'>$wow4/platforms/android/build/outputs/apk/$wow4-debug.apk</a><br>"  >> /home/ubuntu/workspace/index.html
 
 
 
