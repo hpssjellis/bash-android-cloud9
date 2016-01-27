@@ -181,7 +181,7 @@ Echo "Now the fun part, Lets make the Hello World App"
 #change hello-world to the name of your app and folder
 
 
-echo "Enter a folder name, no spaces, no dashes, underscore allowed, for your app and folder example: helloWorld"
+echo "Creting an App called: helloWorld for Android KitKat version 4.4.2W "
 wow4=helloWorld
 
 
