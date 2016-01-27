@@ -222,3 +222,10 @@ ls -l
 
 echo "Look for you new android $wow4/bin $wow4-debug.apk"
 echo "rightclick run index.html, then preview-preview running application to view webpage with .apk"
+
+
+
+service apache2 start
+
+
+echo "On the cloud9 menu look for Preview --> Preview running Application "
