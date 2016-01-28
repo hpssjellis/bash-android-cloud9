@@ -70,3 +70,9 @@ ls -l
 
 echo "Look for you new android $wow4/bin $wow4-debug.apk"
 echo "rightclick run index.html, then preview-preview running application to view webpage with .apk"
+
+
+echo "Or just click this link and open the web page"
+IFS=- read var1 var2 var3 var4<<< $HOSTNAME
+
+echo "http://$var2-$var3-$var1.c9users.io"
