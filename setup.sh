@@ -118,7 +118,7 @@ android update sdk --filter extra --no-ui --force
 android update sdk --all --filter build-tools-23.0.2 --no-ui --force
 android update sdk --filter android-20 --no-ui --force   #Android 4.4W.2 KitKat
 android update sdk --filter android-22 --no-ui --force   #Android 5.1.1  Lollipop
-android update sdk --filter android-23 --no-ui --force   #Android 6.0    Marshmallow
+#android update sdk --filter android-23 --no-ui --force   #Android 6.0    Marshmallow
 
 
 #http://socialcompare.com/en/comparison/android-versions-comparison
@@ -233,26 +233,5 @@ echo "On the cloud9 menu look for Preview --> Preview running Application "
 
 echo "Or just click this link and open the web page"
 
-y="${HOSTNAME//[^-]}"
-echo "$y"
-echo "${#y}"
-echo $HOSTNAME
-
-if [ ${#y} = 4 ]; then
-    IFS=- read var1 var2 var3 var4 var5 <<< $HOSTNAME
-    echo "http://$var2-$var3-$var4-$var1.c9users.io"
-fi
-
-
-if [ ${#y} = 3 ]; then
-    IFS=- read var1 var2 var3 var4 <<< $HOSTNAME
-    echo "http://$var2-$var3-$var1.c9users.io"
-fi
-
-if [ ${#y} = 2 ]; then
-    IFS=- read var1 var2 var3 <<< $HOSTNAME
-    echo "http://$var2-$var1.c9users.io"
-fi
-
-
+echo "http://$C9_HOSTNAME"
 
