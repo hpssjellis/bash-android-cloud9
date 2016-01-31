@@ -45,7 +45,7 @@ android create project \
 
 
 
- android create project --target android-19 --name fff --path fff --activity MainActivity --package com.example.fff --gradle --gradle-version 0.11.+  
+# android create project --target android-19 --name fff --path fff --activity MainActivity --package com.example.fff --gradle --gradle-version 0.11.+  
 
 
 
@@ -72,18 +72,40 @@ printf "\n\n<a href='$wow4/app/build/outputs/apk/$wow4-debug.apk'>$wow4/app/buil
 
 
 
-ls -l app/build/outputs/apk
+ls -l build/outputs/apk
 
 
-echo "Look for you new android $wow4/app/build/outputs/apk/$wow4-debug.apk"
-echo "right-click run index.html, then preview-preview running application to view webpage with .apk"
+
 
 echo "Setting up an alias for fast folder navigation"
+echo ""
 
-printf "\n\nalias myapk='cd $wow4/platforms/android/build/outputs/apk && echo \"Your .apk file is in the $wow4/platforms/android/build/outputs/apk folder \" && pwd && echo \"The file list is\" && ls -l'"  >> ~/.profile
+echo "Look for your new android $wow4/build/outputs/apk/$wow4-debug.apk"
+echo ""
+
+
+printf "\n\nalias myapk='cd $wow4/build/outputs/apk && echo \"Your .apk file is in the $wow4/build/outputs/apk folder \"  && echo \"The file list is\" && ls -l'"  >> ~/.profile
+
+echo "Look for your MainActivity.java file at  $wow4/src/main/java/com/example/sss"
+echo ""
+
+printf "\n\nalias mysrc='cd $wow4/src/main/java/com/example/sss && echo \"Your .apk file is in the $wow4/src/main/java/com/example/sss folder \"  && echo \"The file list is\" && ls -l'"  >> ~/.profile
+
+
+echo "Look for your MainActivity.java file at  $wow4/src/main/java/com/example/sss"
+echo ""
+echo "Your two alias' are myapp and mysrc. Type that in any terminal."
+echo ""
+
+#sss/src/main
+#/src/main/java/com/example/sss
+
+
+
 
 echo "type myapp to find your debug .apk and the time it was made"
-
+echo ""
+echo "right-click run index.html, then preview-preview running application to view webpage with .apk"
 echo "Or just click this link and open the web page"
 echo ""
 echo ""
