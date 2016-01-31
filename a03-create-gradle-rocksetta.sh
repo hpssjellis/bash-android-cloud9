@@ -76,8 +76,11 @@ ls -l app/build/outputs/apk
 echo "Look for you new android $wow4/app/build/outputs/apk/$wow4-debug.apk"
 echo "right-click run index.html, then preview-preview running application to view webpage with .apk"
 
+echo "Setting up an alias for fast folder navigation"
 
+printf "\n\nalias myapk='cd $wow4/platforms/android/build/outputs/apk && echo \"Your .apk file is in the $wow4/platforms/android/build/outputs/apk folder \" && pwd && echo \"The file list is\" && ls -l'"  >> ~/.profile
 
+echo "type myapp to find your debug .apk and the time it was made"
 
 echo "Or just click this link and open the web page"
 echo ""
