@@ -41,9 +41,11 @@ android create project \
 --path $wow4 \
 --activity MainActivity \
 --package com.example.$wow4 \
---gradle --gradle-version2.9.+
+--gradle --gradle-version 0.11.+ 
 
 
+
+ android create project --target android-19 --name fff --path fff --activity MainActivity --package com.example.fff --gradle --gradle-version 0.11.+  
 
 
 
@@ -59,7 +61,7 @@ cd $wow4
 
 #ant debug
 
-chmod a+x gradlew
+#chmod a+x gradlew
 
 ./gradlew assembleDebug
 
