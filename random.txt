@@ -23,6 +23,14 @@ printf "\n\nalias myapk='cd mac/platforms/android/build/outputs/apk && echo \"Yo
 
 
 
+ android create project --target android-19 --name fff --path fff --activity MainActivity --package com.example.fff --gradle --gradle-version 0.11.+  
+
+
+./gradlew assembleDebug
+
+
+./gradlew tasks
+
 
 
 
