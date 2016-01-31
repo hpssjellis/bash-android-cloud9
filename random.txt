@@ -1,0 +1,30 @@
+printf "\n\n<a href='$wow4/platforms/android/build/outputs/apk/android-debug.apk'>$wow4/platforms/android/build/outputs/apk/android-debug.apk</a><br>"  >> /home/ubuntu/workspace/index.html
+
+
+printf "\n\nalias myapk='cd $wow4/platforms/android/build/outputs/apk; ls -l'  >> /home/ubuntu/workspace/index.html
+
+
+printf "\n\nalias myapk='cd $wow4/platforms/android/build/outputs/apk;ls -l'  >> ~/.profile
+
+
+
+
+printf "\nexport GRADLE_HOME=/home/ubuntu/workspace/gradle/gradle-$gradle_version\nexport PATH=\$PATH:\$GRADLE_HOME/bin"  >> ~/.profile
+
+
+
+
+printf "\n\nalias myapk='cd mac/platforms/android/build/outputs/apk;ls -l'  >> ~/.profile
+
+
+printf "\n\nalias myapk='cd mac/platforms/android/build/outputs/apk && echo \"Your .apk file is in the mac/platforms/android/build/outputs/apk folder \" && pwd && echo \"The file list is\" && ls -l'"  >> ~/.profile
+
+
+
+
+
+
+
+
+
+ android create project --target android-19 --name fff --path fff --activity MainActivity --package com.example.fff --gradle --gradle-version 0.11.+  
