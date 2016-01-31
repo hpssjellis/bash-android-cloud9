@@ -89,10 +89,10 @@ printf "\n\nalias myapk='cd $wow4/build/outputs/apk && echo \"Your .apk file is 
 echo "Look for your MainActivity.java file at  $wow4/src/main/java/com/example/sss"
 echo ""
 
-printf "\n\nalias mysrc='cd $wow4/src/main/java/com/example/sss && echo \"Your .apk file is in the $wow4/src/main/java/com/example/sss folder \"  && echo \"The file list is\" && ls -l'"  >> ~/.profile
+printf "\n\nalias mysrc='cd $wow4/src/main/java/com/example/$wow4 && echo \"Your .apk file is in the $wow4/src/main/java/com/example/$wow4 folder \"  && echo \"The file list is\" && ls -l'"  >> ~/.profile
 
 
-echo "Look for your MainActivity.java file at  $wow4/src/main/java/com/example/sss"
+echo "Look for your MainActivity.java file at  $wow4/src/main/java/com/example/$wow4"
 echo ""
 echo "Your two alias' are myapp and mysrc. Type that in any terminal."
 echo ""
