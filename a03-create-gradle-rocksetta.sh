@@ -84,12 +84,12 @@ echo "Look for your new android $wow4/build/outputs/apk/$wow4-debug.apk"
 echo ""
 
 
-printf "\n\nalias myapk='cd $wow4/build/outputs/apk && echo \"Your .apk file is in the $wow4/build/outputs/apk folder \"  && echo \"The file list is\" && ls -l'"  >> ~/.profile
+printf "\n\nalias myapk$wow4='cd $wow4/build/outputs/apk && echo \"Your .apk file is in the $wow4/build/outputs/apk folder \"  && echo \"The file list is\" && ls -l'"  >> ~/.profile
 
 echo "Look for your MainActivity.java file at  $wow4/src/main/java/com/example/sss"
 echo ""
 
-printf "\n\nalias mysrc='cd $wow4/src/main/java/com/example/$wow4 && echo \"Your .apk file is in the $wow4/src/main/java/com/example/$wow4 folder \"  && echo \"The file list is\" && ls -l'"  >> ~/.profile
+printf "\n\nalias mysrc$wow4='cd $wow4/src/main/java/com/example/$wow4 && echo \"Your .apk file is in the $wow4/src/main/java/com/example/$wow4 folder \"  && echo \"The file list is\" && ls -l'"  >> ~/.profile
 
 
 echo "Look for your MainActivity.java file at  $wow4/src/main/java/com/example/$wow4"
