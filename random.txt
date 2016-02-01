@@ -36,3 +36,48 @@ printf "\n\nalias myapk='cd mac/platforms/android/build/outputs/apk && echo \"Yo
 
 
  android create project --target android-19 --name fff --path fff --activity MainActivity --package com.example.fff --gradle --gradle-version 0.11.+  
+
+
+
+
+
+
+
+
+
+STORING INFO OUTSIDE YOUR WORKSPACE FOLDER
+If someone has read access to your workspace (as all do on a community workspace) but not write privileges, they can't open a terminal in your workspace. This means they won't be able to see any files that aren't within your workspace folder. Because of this, you can store sensitive data in config files as long as they're outside of your workspace folder.
+
+For example, you can go into the terminal, change to your home directory, and create a file with sensitive data in it like this:
+
+Terminal
+cd ~/
+mkdir sensitive_data
+cd sensitive_data
+echo 'var config = { "db_username": "cloud9", "db_password": "password1234" }; module.exports = config;' > config.js
+The config variable is the information I want to keep private and the module.exports part ensures that I'll be able to access this info from another file as though it were a module.
+
+After you've created a file like this, you're free to access it in your app without other people having access to that sensitive information. To access the config file in Node, we can create a test.js file in the workspace directory and put the following code into it:
+
+JavaScript
+var config = require('../sensitive_data/config');
+
+console.log(config.db_password);
+That should print out "password1234" just as we input into our config.js file. Now you're free to add other files and variables using this same method of keeping your sensitive information private.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
