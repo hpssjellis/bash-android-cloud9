@@ -73,10 +73,25 @@ That should print out "password1234" just as we input into our config.js file. N
 
 
 
+if properly cloud9 originally setup from a linked github then just
+
+
+git push 
+
+or
+
+git pull
+
+in any terminal
+
+otherwise it is a bit more complex.
 
 
 
 
+If you auth with your Github account in cloud9 and clone a Github project, then if you git push it will push to the original repo in Github
+
+[JJ] If you cloned the project in Cloud9 before (via the command line, so not via the UI on the dashboard), you can do git remote add upstream git@github.com:your/repo.git. Now you have another remote that you can either pull from (git pull upstream master or push to git push upstream master).
 
 
 
