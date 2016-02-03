@@ -39,7 +39,7 @@ android create project \
 --target android-$myNum \
 --name $wow4 \
 --path $wow4 \
---activity $wow4 \
+--activity MainActivity \
 --package com.example.$wow4
 
 
