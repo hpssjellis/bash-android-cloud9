@@ -141,14 +141,14 @@ ln -sfnv gradle-${gradle_version} /home/ubuntu/workspace/gradle/gradle-${gradle_
 
 echo "exporting the Path to my .profile file so other terminals have the path"
 
-printf "\nexport GRADLE_HOME=/home/ubuntu/workspace/gradle/gradle-$gradle_version\nexport PATH=\$PATH:\$GRADLE_HOME/bin"  >> ~/.profile
+printf "\nexport GRADLE_USER_HOME=/home/ubuntu/workspace/gradle/gradle-$gradle_version\nexport PATH=\$PATH:\$GRADLE_USER_HOME/bin"  >> ~/.profile
 
 
 echo "exporting the path so that the next command works"
 
 
-export GRADLE_HOME=/home/ubuntu/workspace/gradle/gradle-$gradle_version
-export PATH=$PATH:$GRADLE_HOME/bin
+export GRADLE_USER_HOME=/home/ubuntu/workspace/gradle/gradle-$gradle_version
+export PATH=$PATH:$GRADLE_USER_HOME/bin
 
 
 #printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin" > /etc/profile.d/gradle.sh
