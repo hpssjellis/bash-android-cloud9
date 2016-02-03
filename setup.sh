@@ -187,7 +187,7 @@ wow4=helloWorld
 
 
 android create project \
---target android-$myNum \
+--target android-20 \
 --name $wow4 \
 --path $wow4 \
 --activity MainActivity \
@@ -201,7 +201,7 @@ android create project \
 
 #ant
 
-android update project --name $wow4 --target android-$myNum --path $wow4
+android update project --name $wow4 --target android-20 --path $wow4
 
 cd $wow4
 
