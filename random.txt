@@ -96,3 +96,30 @@ If you auth with your Github account in cloud9 and clone a Github project, then 
 
 
 
+
+
+
+
+
+biuld.gradle example
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.3'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+}
+
+
+
+
