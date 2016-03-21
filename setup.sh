@@ -223,6 +223,9 @@ echo "Look for you new android $wow4/bin $wow4-debug.apk"
 echo "rightclick run index.html, then preview-preview running application to view webpage with .apk"
 
 
+echo "Activating apache2 webserver"
+
+service apache2 start
 
 
 echo "Or just click this link and open the web page"
