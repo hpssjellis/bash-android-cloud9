@@ -44,7 +44,7 @@ export ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux
 export PATH=$PATH:$ANDROID_SDK_HOME/tools
 export PATH=$PATH:$ANDROID_SDK_HOME/platform-tools
 
-#sudo chown -R ubuntu:ubuntu /home/ubuntu/workspace/android-sdk-linux
+sudo chown -R ubuntu:ubuntu /home/ubuntu/workspace/android-sdk-linux
 
 
 
@@ -91,6 +91,8 @@ export ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e
 export PATH=$PATH:$ANDROID_NDK_HOME
 
 #sudo chown -R ubuntu:ubuntu /home/ubuntu/workspace/android-ndk-r10e
+
+
 
 
 
