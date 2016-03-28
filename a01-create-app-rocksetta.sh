@@ -56,7 +56,7 @@ cd $wow4
 
 ant clean
 
-ant debug
+sudo ant debug
 
 cd bin
 
