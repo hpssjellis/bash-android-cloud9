@@ -61,14 +61,14 @@ cd $wow4
 
 #ant debug
 
-#chmod a+x gradlew
+chmod a+x gradlew
 
-sudo ./gradlew assembleDebug
+./gradlew assembleDebug
 
 #cd bin
 
 
-printf "\n\n<a href='$wow4/build/outputs/apk/$wow4-debug.apk'>$wow4/build/outputs/apk/$wow4-debug.apk</a><br><br>"  >> /home/ubuntu/workspace/index.html
+printf "\n\n<a href='../$wow4/build/outputs/apk/$wow4-debug.apk'>../$wow4/build/outputs/apk/$wow4-debug.apk</a><br><br>"  >> /home/ubuntu/workspace/index.html
 
 
 
