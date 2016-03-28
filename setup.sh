@@ -5,6 +5,7 @@
 #  best in cloud 9 to just right click this file and select run
 
 echo "A needed java dependency, Note there may be others for more advanced Apps!!!"
+sudo apt-get update
 sudo apt-get install lib32z1  openjdk-7-jdk
  
  
