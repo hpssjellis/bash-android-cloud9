@@ -63,7 +63,7 @@ cd $wow4
 
 #chmod a+x gradlew
 
-./gradlew assembleDebug
+sudo ./gradlew assembleDebug
 
 #cd bin
 
