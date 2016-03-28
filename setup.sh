@@ -172,69 +172,16 @@ echo "--------------------------------------------------------------------------
 echo "------------------------------------------------------------------------------"
 echo "------------------------------------------------------------------------------"
 echo "------------------------------------------------------------------------------"
-Echo "Now the fun part, Lets make the Hello World App"
-
-#!/bin/bash  
-
-#  only need to run this script with the command (do not type the #)
-#  bash a06-rocksetta-setup-android.sh
-# best in cloud 9 to just right click this file and select run
-
-
-#change hello-world to the name of your app and folder
-
-
-echo "Creting an App called: helloWorld for Android KitKat version 4.4.2W "
-wow4=helloWorld
-
-
-
-android create project \
---target android-20 \
---name $wow4 \
---path $wow4 \
---activity MainActivity \
---package com.example.$wow4
+Echo "Now the fun part, Lets make the Hello World App for both Ant and Gradle"
 
 
 
 
 
-#android update project --path .
+bash a00-auto-ant-gradle.sh
 
-#ant
+echo "Now lets start Apache"
 
-android update project --name $wow4 --target android-20 --path $wow4
+bash a04-restart-webserver.sh
 
-cd $wow4
-
-ant clean
-
-ant debug
-
-cd bin
-
-
-printf "\n\n<a href='$wow4/bin/$wow4-debug.apk'>$wow4/bin/$wow4-debug.apk</a><br>"  >> /home/ubuntu/workspace/index.html
-
-
-
-ls -l
-
-
-echo "Look for you new android $wow4/bin $wow4-debug.apk"
-echo "rightclick run index.html, then preview-preview running application to view webpage with .apk"
-
-
-echo "Activating apache2 webserver"
-
-service apache2 start
-
-
-echo "Or just click this link and open the web page"
-echo ""
-echo ""
-echo ""
-
-echo "http://$C9_HOSTNAME"
 

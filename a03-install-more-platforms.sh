@@ -1,8 +1,8 @@
 #!/bin/bash  
 
 #  only need to run this script with the command (do not type the #)
-#  bash a01-create-app-rocksetta.sh
-# best in cloud 9 to just right click this file and select run
+#  bash a03-install-more-platforms.sh
+#  best in cloud 9 to just right click this file and select run
 
 
 
@@ -13,16 +13,21 @@
 #echo "for --target android-23   Android 6.0    Marshmallow, type 23"
 
 echo "Finding code numbers for the Android SDK platform you wish to install"
+echo "Listing installed paltforms"
+
+android list targets
+
 echo ""
+echo "Listing platforms to install"
 
 android list sdk
 
 echo "------------------------------------------------------------------------"
 echo ""
-echo "Type the left hand side number of the SDK to install"
+echo "Type the left hand side number of the SDK to install. example 1"
 
 read myNum
-android update sdk --filter $myNum --no-ui --force 
+sudo android update sdk --filter $myNum --no-ui --force 
 
 
 # the commands to install the platforms
