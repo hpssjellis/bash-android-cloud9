@@ -1,5 +1,8 @@
 #!/bin/bash    
 # 
+#
+# Never make your final Play Store program on Cloud9 free service since it will be visible to anyone!
+#
 # Creates a signed and zipaligned APK from your Ionic project
 #
 # Place your keystore in the root of your project and name it <company>.keystore
