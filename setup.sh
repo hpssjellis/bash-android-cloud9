@@ -61,53 +61,32 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/workspace/android-sdk-linux
 #echo "-------------Android SDK DONE-------------------------------------------------"
 #echo ". "
 
+
+
+
+echo "Darn it the Android NDK is too big. so not installing it"
+
 #echo "Now lets try the Android NDK"
 
+#wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin -O /home/ubuntu/workspace/android-ndk-r10e-linux-x86_64.bin
+#cd /home/ubuntu/workspace/
 
+#chmod a+x android-ndk-r10e-linux-x86_64.bin
+#./android-ndk-r10e-linux-x86_64.bin
+#rm android-ndk-r10e-linux-x86_64.bin
 
-wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin -O /home/ubuntu/workspace/android-ndk-r10e-linux-x86_64.bin
+#echo "export paths to the .profile file so other terminals can use android NDK"
+#printf "\nexport ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e\nexport PATH=\$PATH:\$ANDROID_NDK_HOME"  >> ~/.profile
 
-cd /home/ubuntu/workspace/
-
-chmod a+x android-ndk-r10e-linux-x86_64.bin
-./android-ndk-r10e-linux-x86_64.bin
-
-rm android-ndk-r10e-linux-x86_64.bin
-
-
+#echo "export paths here so this file can use android NDK"
 #export ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e
-
-#export PATH=${PATH}:ANDROID_NDK_HOME
-#printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin"  >> ~/.profile
-
-echo "export paths to the .profile file so other terminals can use android NDK"
-
-printf "\nexport ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e\nexport PATH=\$PATH:\$ANDROID_NDK_HOME"  >> ~/.profile
-
-
-
-echo "export paths here so this file can use android NDK"
-export ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e
-export PATH=$PATH:$ANDROID_NDK_HOME
+#export PATH=$PATH:$ANDROID_NDK_HOME
 
 #sudo chown -R ubuntu:ubuntu /home/ubuntu/workspace/android-ndk-r10e
 
 
 
-
-
-
-## Add Android and NPM paths to the profile to preserve settings on boot
-#SUGGEST TRYING THESE COMMANDS
-#echo "export PATH=\$PATH:$ANDROID_SDK_HOME/tools" >> ".profile"
-#echo "export PATH=\$PATH:$ANDROID_SDK_HOME/platform-tools" >> ".profile"
-
-
-
-
-
-
-echo "-------------Android SDK  NDK installed but not setup-------------------------------------------------"
+#echo "-------------Android SDK  NDK installed but not setup-------------------------------------------------"
 
 
 echo "You may have to enter Y several times"
