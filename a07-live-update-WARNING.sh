@@ -1,0 +1,10 @@
+#!/bin/bash  
+
+#  only need to run this script with the command (do not type the #)
+#  bash a07-live-update-WARNING.sh
+#  best in cloud 9 to just right click this file and select run
+
+#sudo ln -s /homeu/wow /home/my-wow         
+
+echo "WARNING THIS MAY CHANGE YOUR WORKSPACE, IF UNSURE EXIT THIS TERMINAL"
+echo "This bash file will update the workspace from the github repository at "
