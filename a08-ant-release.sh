@@ -128,3 +128,24 @@ ant release
 
 #Good reference
 #http://geosoft.no/development/android.html
+
+
+
+
+cd bin
+
+# Make the following a full path to where your index.html file is /home/ubuntu/workspace/www/index.html
+printf "\n\n<a href='../$wow4/bin/$wow4--release.apk'>../$wow4/bin/$wow4--release.apk</a><br>"  >> /home/ubuntu/workspace/index.html
+
+ls -l
+
+echo "Look for you new android $wow4/bin $wow4--release.apk"
+echo "right-click run index.html, then preview-preview running application to view webpage with .apk"
+
+
+echo "Or just click this link and open the web page"
+echo ""
+echo ""
+echo ""
+
+echo "http://$C9_HOSTNAME"
