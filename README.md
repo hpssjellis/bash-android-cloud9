@@ -31,4 +31,6 @@ or right click a01-create-app-rocksetta.sh then type a folder name.
 
 Enjoy!
 
+.
+
 
